@@ -60,4 +60,4 @@ Veamos como agregamos un system call a nuestro Kernel. A continuación estaremos
             **mkdir proyecto**
             **cd proyecto**
             Creamos el archivo **touch my_syscall.c** y lo editamos (Puede usar tu editor favorito nano, vim, gedit u otro) **gedit my_syscall.c**
-            Toma de referencia el codigo que encuentras [Aquí](/Systems_Calls_C/)
+            Toma de referencia el codigo que encuentras [Aquí](/Systems_Calls_C/my_syscall.c)
