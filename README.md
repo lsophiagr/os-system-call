@@ -1,7 +1,7 @@
-# OS-P1
+# OS-P1 🤖 👩‍💻🧑🏻‍💻
 Proyecto System Call para la clase de Sistemas Operativos
 
-## Problema a desarrollar: 
+## Problema a desarrollar: 🤖
 1. Desarrollar una función que determine si una expresión aritmética se encuentra correctamente
 cerrada. La función deberá retornar verdadero si la expresión está correctamente cerrada y falso de lo
 contrario. Entiéndase por cerrada al hecho de que cada símbolo de paréntesis y/o corchete abierto debe tener
@@ -16,3 +16,10 @@ puntero a la cadena que contiene la expresión
 
 5. Deberá de crear un programa que reciba como entrada en línea de comando la cadena a utilizar y
 hacer uso de la system call implementada en el sistema operativo. 
+
+## Entregable 👾👾
+- URL al repositorio donde implementó la función por medio de un system call y el programa que
+hace uso de la función
+
+- Documentación con el diagrama conceptual que explique todos los pasos necesarios que el
+sistema operativo tiene que realizar para que el proceso de usuario pueda utilizar la system call. 
