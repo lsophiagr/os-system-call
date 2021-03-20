@@ -60,4 +60,8 @@ Veamos como agregamos un system call a nuestro Kernel. A continuación estaremos
             **mkdir proyecto**
             **cd proyecto**
             Creamos el archivo **touch my_syscall.c** y lo editamos (Puede usar tu editor favorito nano, vim, gedit u otro) **gedit my_syscall.c**
-            Toma de referencia el codigo que encuentras [Aquí](/Systems_Calls_C/C/my_syscall.c)
+            Toma de referencia el codigo que encuentras [Aquí](/Systems_Calls_C/C/my_syscall.c)\n
+            Creamos el archivo Makefile de la misma manera como my_syscall.c sin extension. Este debe contener obj-y := my_syscall.o
+
+- Paso 7: Agregar la carpeta proyecto a el Makefile de Linux 4.17.4\n
+            Deb
