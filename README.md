@@ -46,4 +46,18 @@ Veamos como agregamos un system call a nuestro Kernel. A continuación estaremos
 
 - Paso 3: Confirmar nuestra versión de Kernel con **uname -r** e ingresar con **sudo -s**
 
-- Paso 4: 
+- Paso 4: Cambiar de Path para poder descargar el nuevo Kernel. Adquirir el nuevo kernel con WGET
+            **cd /usr/src**
+            **wget https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.17.4.tar.xz**
+            Intenta cambiar a un Kernel de una versión superior para que así cuándo reinicies el sistema el Kernel sea actualizado.
+
+- Paso 5: Vamos a extraer el .tar que acabamos de descargar. En la misma carpeta donde se encuentra tu nuevo kernel comprimido ejecuta el siguiente comando:
+            **tar -xvf linux-4.17.4.tar.xz**
+            Luego que el sistema termine de descomprimir los archivos procederemos a ingresar dentro de nuestro nuevo kernel
+            **cd linux-4.17.4**
+
+- Paso 6: Definir una nueva system call. En este caso estaremos agregando múltiples funciones. Creamos un directorio que contendra estas funciones en un solo archivo .c
+            **mkdir proyecto**
+            **cd proyecto**
+            Creamos el archivo **touch my_syscall.c** y lo editamos (Puede usar tu editor favorito nano, vim, gedit u otro) **gedit my_syscall.c**
+            Toma de referencia el codigo que encuentras [Aquí](/Systems_Calls_C/)
