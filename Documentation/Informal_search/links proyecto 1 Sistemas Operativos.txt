@@ -1,0 +1,80 @@
+Links para implementar system Call en el kernel.
+
+Adding a Hello World System Call to Linux Kernel | by Anubhav Shrimal | Anubhav Shrimal | Medium
+https://medium.com/anubhav-shrimal/adding-a-hello-world-system-call-to-linux-kernel-dad32875872
+
+Tutorial - Write a System Call • Stephen Brennan
+https://brennan.io/2016/11/14/kernel-dev-ep3/
+
+(165) How to add a system call to Linux Kernel-4.8.8 - YouTube
+https://www.youtube.com/watch?v=fh63RhcyPCs
+
+How to add system call (syscall) to the kernel, compile and test it? - DEV Community
+https://dev.to/omergulen/how-to-add-system-call-syscall-to-the-kernel-compile-and-test-it-3e6p
+
+Adding a Hello World System Call to Linux kernel 3.16.0 – Welcome To Surya's World
+https://tssurya.wordpress.com/2014/08/19/adding-a-hello-world-system-call-to-linux-kernel-3-16-0/
+
+Ubuntu Virtual Machine Images for VirtualBox and VMware
+https://www.osboxes.org/ubuntu/
+
+
+
+Hacer ubuntu virtual con google cloud 
+
+Installing & Configuring Ubuntu Desktop 18.04 for Google Compute Engine (GCE) with a Graphical User Interface (GUI) and Anydesk (for Remote Access) | by Chris Kuhn | Medium
+https://medium.com/@jhsperc/gce-ubuntu-desktop-18-04-anydesk-42a21cf8821c
+
+(2) How to set up a Linux desktop on Google Cloud Platform? | LinkedIn
+https://www.linkedin.com/pulse/how-set-up-linux-desktop-google-cloud-platform-tuomas-eerola/
+
+Setup Desktop GUI Screen for a Ubuntu VM instance on Google Cloud Platform – Limitless Data Science
+https://limitlessdatascience.wordpress.com/2019/10/02/setup-desktop-gui-screen-for-a-ubuntu-vm-instance-on-google-cloud-platform/
+
+Setup Ubuntu GUI interface (gCloud) – FourSwords LLC – Off-Chain Data & Blockchain Solution
+https://fourswords.io/setup-ubuntu-gui-interface-gcloud/
+
+enable Remote Desktop to your Ubunt - Buscar con Google
+https://www.google.com/search?q=enable+Remote+Desktop+to+your+Ubunt&oq=enable+Remote+Desktop+to+your+Ubunt&aqs=chrome..69i57j33i22i29i30l9.273j0j7&sourceid=chrome&ie=UTF-8
+
+
+
+INVESTIGACION variada de conceptos
+What is the Linux kernel?
+https://www.redhat.com/en/topics/linux/what-is-the-linux-kernel#:~:text=The%20Linux%C2%AE%20kernel%20is,resources%20as%20efficiently%20as%20possible.
+
+An introduction to the Linux boot and startup processes | Opensource.com
+https://opensource.com/article/17/2/linux-boot-and-startup#:~:text=The%20kernels%20are%20located%20in,can%20perform%20any%20useful%20work.
+
+GNU GRUB - Wikipedia
+https://en.wikipedia.org/wiki/GNU_GRUB
+
+Núcleo (informática) - Wikipedia, la enciclopedia libre
+https://es.wikipedia.org/wiki/N%C3%BAcleo_(inform%C3%A1tica)
+
+how to implement my own system call in Linux kernel 4.x? - Stack Overflow
+https://stackoverflow.com/questions/40559537/how-to-implement-my-own-system-call-in-linux-kernel-4-x
+
+What is the Linux Kernel and What Does It Do?
+https://www.howtogeek.com/howto/31632/what-is-the-linux-kernel-and-what-does-it-do/
+
+How to Compile a Linux Kernel - Linux.com
+https://www.linux.com/topic/desktop/how-compile-linux-kernel-0/
+
+How To Build Linux Kernel {Step-By-Step} | phoenixNAP KB
+https://phoenixnap.com/kb/build-linux-kernel
+
+Introduction to Linux (LFS101x) - Linux Foundation - Training
+https://training.linuxfoundation.org/training/introduction-to-linux/
+
+How to compile and install Linux Kernel 5.6.9 from source code - nixCraft
+https://www.cyberciti.biz/tips/compiling-linux-kernel-26.html
+
+The Linux Kernel Archives
+https://www.kernel.org/
+
+what is the BIOS - Buscar con Google
+https://www.google.com/search?q=what+is+the+BIOS&oq=what+is+the+BIOS&aqs=chrome..69i57j0j0i22i30l8.4396j0j7&sourceid=chrome&ie=UTF-8
+
+
+
