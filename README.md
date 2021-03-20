@@ -56,7 +56,10 @@ Veamos como agregamos un system call a nuestro Kernel. A continuación estaremos
             Luego que el sistema termine de descomprimir los archivos procederemos a ingresar dentro de nuestro nuevo kernel
             **cd linux-4.17.4**
 
-- Paso 6: Definir una nueva system call. En este caso estaremos agregando múltiples funciones. Creamos un directorio que contendra estas funciones en un solo archivo .c
+- Paso 6: Definir una nueva system call. 
+
+
+En este caso estaremos agregando múltiples funciones. Creamos un directorio que contendra estas funciones en un solo archivo .c
             **mkdir proyecto**
             **cd proyecto**
             Creamos el archivo **touch my_syscall.c** y lo editamos (Puede usar tu editor favorito nano, vim, gedit u otro) **gedit my_syscall.c**
