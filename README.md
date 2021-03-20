@@ -34,4 +34,4 @@ Un system call es un mecanismo que provee una interfaz entre un proceso y el sis
 
 #### Contenido
 Cuándo nosotros queremos utilizar un servicio del kernel necesitamos usar un system call. Como usuarios nosotros no podemos ejecutar un system call debido a que solo se puede ejecutar en modo Kernel como lo muestra la imagen. Como usuarios no nos percatamos de estos system calls debido a que ya se encuentran dentro del sistema para nuestro uso, cuándo leemos o escribimos a un archivo como usuarios el Kernel ejecuta múltiples System calls para que nosotros podamos utilizar estos servicios en las aplicaciones convencionales.
-![Alt text](src_Images/sys_Call_Process?raw=true "Syscal Process")
+![Sys_Call_Process](https://www.guru99.com/images/1/121119_0451_SystemCalli3.png)
