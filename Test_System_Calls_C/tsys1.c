@@ -4,7 +4,7 @@
 #include <unistd.h>
 int main()
 {
-         long int amma = syscall(548);
+         long int amma = syscall(333);
          printf("System call sys_hello returned %ld\n", amma);
          return 0;
 }
