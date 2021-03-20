@@ -1,4 +1,4 @@
-# OS-P1 🤖 👩‍💻🧑🏻‍💻
+# OS-P1  👩‍💻🧑🏻‍💻
 Proyecto System Call para la clase de Sistemas Operativos
 
 ## Problema a desarrollar: 🤖
@@ -17,7 +17,7 @@ puntero a la cadena que contiene la expresión
 5. Deberá de crear un programa que reciba como entrada en línea de comando la cadena a utilizar y
 hacer uso de la system call implementada en el sistema operativo. 
 
-## Entregable 👾👾
+## Entregable 👓
 - URL al repositorio donde implementó la función por medio de un system call y el programa que
 hace uso de la función
 
