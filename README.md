@@ -83,3 +83,30 @@ En este caso estaremos agregando múltiples funciones. Creamos un directorio que
             **gedit syscall_64.tbl**
             Agrega la system call dentro de 332 en adelante. A continuacion te damos un ejemplo de la imagen como se debe ver la tabla.
 ![Syscall_Table](https://github.com/lsophiagr/OS-P1/blob/main/src_Images/Screenshot%20(769).png)
+
+- Paso 9: Agrega el system call al archivo de headers.
+            **cd include/linux/**
+            **gedit syscalls.h**
+            Agrega la siguiente linea hasta la ultima linea del archivo justo antes del #endif
+            **asmlinkage long sys_hello(void);**
+
+- Paso 10: Instalar las siguiente librerias para compilar.
+            Corre los siguientes comandos para preparte para compilar tu nuevo kernel.
+            **sudo apt-get install gcc**
+            **sudo apt-get install libncurses5-dev**
+            **sudo apt-get install bison**
+            **sudo apt-get install flex**
+            **sudo apt-get install libssl-dev**
+            **sudo apt-get install libelf-dev**
+            **sudo apt-get install make**
+            **sudo apt-get update**
+            **sudo apt-get upgrade**
+
+- Paso 11: Configura tu Kernel.
+            En el path **linux-4.17.4** crea tu archivo de configuracion antes de compilar. Esto puedes crearlo corriendo el siguiente comando: **sudo make menuconfig**
+
+- Paso 12: Compila tu Kernel
+            En el path the **linux-4.17.4** tendras que compilar tu Kernel. Esto puedes lograrlo con **make -jn** la *n* hace referencia a cuantos procesadores cuenta tu maquina virtual, esto hace que el proceso sea *n* veces mas rapido.
+
+- Paso 13: Instala/ Actualiza tu Kernel.
+            Corre el siguiente comando **sudo make modules_install install**
