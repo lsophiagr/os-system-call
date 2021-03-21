@@ -82,4 +82,4 @@ En este caso estaremos agregando múltiples funciones. Creamos un directorio que
             **cd arch/x86/entry/syscalls/**
             **gedit syscall_64.tbl**
             Agrega la system call dentro de 332 en adelante. A continuacion te damos un ejemplo de la imagen como se debe ver la tabla.
-![Syscall_Table](/src_images/sys_table.png)
+![Syscall_Table](https://github.com/lsophiagr/OS-P1/blob/main/src_Images/sys_table.png)
