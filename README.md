@@ -39,6 +39,8 @@ Cuándo nosotros queremos utilizar un servicio del kernel necesitamos usar un sy
 Veamos como agregamos un system call a nuestro Kernel. A continuación estaremos utilizando un [Ubuntu 16.04.7 LTS](https://releases.ubuntu.com/xenial/) de 64 bits que tiene un Kernel 4.15.0 y estaremos actualizando el Kernel a 4.17.4 que este contendrá nuestro system call.
 
 - Paso 1: Descargar software de VirtualBox y la imagen ISO a montar.
+
+
 [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 [Ubuntu 16.04.7 LTS](https://releases.ubuntu.com/xenial/)
 
@@ -46,12 +48,18 @@ Veamos como agregamos un system call a nuestro Kernel. A continuación estaremos
 
 - Paso 3: Confirmar nuestra versión de Kernel con **uname -r** e ingresar con **sudo -s**
 
-- Paso 4: Cambiar de Path para poder descargar el nuevo Kernel. Adquirir el nuevo kernel con WGET
+- Paso 4: Cambiar de Path para poder descargar el nuevo Kernel.
+
+
+ Adquirir el nuevo kernel con WGET
             **cd /usr/src**
             **wget https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.17.4.tar.xz**
             Intenta cambiar a un Kernel de una versión superior para que así cuándo reinicies el sistema el Kernel sea actualizado.
 
-- Paso 5: Vamos a extraer el .tar que acabamos de descargar. En la misma carpeta donde se encuentra tu nuevo kernel comprimido ejecuta el siguiente comando:
+- Paso 5: Vamos a extraer el .tar que acabamos de descargar.
+
+
+ En la misma carpeta donde se encuentra tu nuevo kernel comprimido ejecuta el siguiente comando:
             **tar -xvf linux-4.17.4.tar.xz**
             Luego que el sistema termine de descomprimir los archivos procederemos a ingresar dentro de nuestro nuevo kernel
             **cd linux-4.17.4**
@@ -66,5 +74,12 @@ En este caso estaremos agregando múltiples funciones. Creamos un directorio que
             Toma de referencia el codigo que encuentras [Aquí](/Systems_Calls_C/C/my_syscall.c)\n
             Creamos el archivo Makefile de la misma manera como my_syscall.c sin extension. Este debe contener obj-y := my_syscall.o
 
-- Paso 7: Agregar la carpeta proyecto a el Makefile de Linux 4.17.4\n
-            Deb
+- Paso 7: Agregar la carpeta proyecto a el Makefile de Linux 4.17.4.
+            **gedit Makefile** Busca por el *core-y += kernel/ mm/ fs/ ipc/ security/ crypto/ block/*
+            Al final de esta linea agrega la carpeta de proyecto/ debes dejer un espacio entre *block/* y tu nueva carpeta.
+
+- Paso 8: Agregar tu nueva system call a la tabla, en este ejemplo te mostraremos como hacerlo para 64 bits.
+            **cd arch/x86/entry/syscalls/**
+            **gedit syscall_64.tbl**
+            Agrega la system call dentro de 332 en adelante. A continuacion te damos un ejemplo de la imagen como se debe ver la tabla.
+![Syscall_Table](/src_images/sys_table.png)
