@@ -122,7 +122,25 @@ En el path **linux-4.17.4** crea tu archivo de configuracion antes de compilar. 
 
 En el path the **linux-4.17.4** tendras que compilar tu Kernel. Esto puedes lograrlo con **make -jn** la *n* hace referencia a cuantos procesadores cuenta tu maquina virtual, esto hace que el proceso sea *n* veces mas rapido.
 
+
+El resultado se vera así luego de tu compilación.
+![Kernel Compiled](https://github.com/lsophiagr/OS-P1/blob/main/src_Images/Screenshot%20(764).png)
 - Paso 13: Instala/ Actualiza tu Kernel.
 
 
 Corre el siguiente comando **sudo make modules_install install**
+
+Luego de correr el último comando podrás verificar que en tu fyle system de linux (El que actualmente corre) podrás ir a */boot/* y veras que existen nuevos archivos de configuración, mapping, vm linux y otros.
+
+
+![Kernel new files](https://github.com/lsophiagr/OS-P1/blob/main/src_Images/Screenshot%20(765).png)
+
+
+Reinicia tu sistema para que actualice a tu nuevo Kernel.
+**shutdown -r now**
+
+
+Podras revisar luego del reboot tu kernel actualizado corriendo con **uname -r** en este comando deberías poder ver tu nuevo Kernel operando.
+
+
+![Kernel new files](https://github.com/lsophiagr/OS-P1/blob/main/src_Images/Screenshot%20(768).png)
