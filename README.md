@@ -67,31 +67,41 @@ Veamos como agregamos un system call a nuestro Kernel. A continuación estaremos
 - Paso 6: Definir una nueva system call. 
 
 
-En este caso estaremos agregando múltiples funciones. Creamos un directorio que contendra estas funciones en un solo archivo .c
-            **mkdir proyecto**
+En este caso estaremos agregando múltiples funciones. Creamos un directorio que contendra estas funciones en un solo archivo.
+
+
+ **mkdir proyecto**
             **cd proyecto**
             Creamos el archivo **touch my_syscall.c** y lo editamos (Puede usar tu editor favorito nano, vim, gedit u otro) **gedit my_syscall.c**
             Toma de referencia el codigo que encuentras [Aquí](/Systems_Calls_C/C/my_syscall.c)\n
             Creamos el archivo Makefile de la misma manera como my_syscall.c sin extension. Este debe contener obj-y := my_syscall.o
 
 - Paso 7: Agregar la carpeta proyecto a el Makefile de Linux 4.17.4.
-            **gedit Makefile** Busca por el *core-y += kernel/ mm/ fs/ ipc/ security/ crypto/ block/*
+
+
+**gedit Makefile** Busca por el *core-y += kernel/ mm/ fs/ ipc/ security/ crypto/ block/*
             Al final de esta linea agrega la carpeta de proyecto/ debes dejer un espacio entre *block/* y tu nueva carpeta.
 
 - Paso 8: Agregar tu nueva system call a la tabla, en este ejemplo te mostraremos como hacerlo para 64 bits.
-            **cd arch/x86/entry/syscalls/**
+
+
+**cd arch/x86/entry/syscalls/**
             **gedit syscall_64.tbl**
             Agrega la system call dentro de 332 en adelante. A continuacion te damos un ejemplo de la imagen como se debe ver la tabla.
 ![Syscall_Table](https://github.com/lsophiagr/OS-P1/blob/main/src_Images/Screenshot%20(769).png)
 
 - Paso 9: Agrega el system call al archivo de headers.
-            **cd include/linux/**
+
+
+**cd include/linux/**
             **gedit syscalls.h**
             Agrega la siguiente linea hasta la ultima linea del archivo justo antes del #endif
             **asmlinkage long sys_hello(void);**
 
 - Paso 10: Instalar las siguiente librerias para compilar.
-            Corre los siguientes comandos para preparte para compilar tu nuevo kernel.
+
+
+Corre los siguientes comandos para preparte para compilar tu nuevo kernel.
             **sudo apt-get install gcc**
             **sudo apt-get install libncurses5-dev**
             **sudo apt-get install bison**
@@ -103,10 +113,16 @@ En este caso estaremos agregando múltiples funciones. Creamos un directorio que
             **sudo apt-get upgrade**
 
 - Paso 11: Configura tu Kernel.
-            En el path **linux-4.17.4** crea tu archivo de configuracion antes de compilar. Esto puedes crearlo corriendo el siguiente comando: **sudo make menuconfig**
+
+
+En el path **linux-4.17.4** crea tu archivo de configuracion antes de compilar. Esto puedes crearlo corriendo el siguiente comando: **sudo make menuconfig**
 
 - Paso 12: Compila tu Kernel
-            En el path the **linux-4.17.4** tendras que compilar tu Kernel. Esto puedes lograrlo con **make -jn** la *n* hace referencia a cuantos procesadores cuenta tu maquina virtual, esto hace que el proceso sea *n* veces mas rapido.
+
+
+En el path the **linux-4.17.4** tendras que compilar tu Kernel. Esto puedes lograrlo con **make -jn** la *n* hace referencia a cuantos procesadores cuenta tu maquina virtual, esto hace que el proceso sea *n* veces mas rapido.
 
 - Paso 13: Instala/ Actualiza tu Kernel.
-            Corre el siguiente comando **sudo make modules_install install**
+
+
+Corre el siguiente comando **sudo make modules_install install**
