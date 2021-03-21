@@ -144,3 +144,19 @@ Podras revisar luego del reboot tu kernel actualizado corriendo con **uname -r**
 
 
 ![Kernel new files](https://github.com/lsophiagr/OS-P1/blob/main/src_Images/Screenshot%20(768).png)
+
+
+#### Test System Call
+Ve al directorio home(~) y crea un archivo para probar tu system call.
+Puedes tomar una de las siguientes para poder hacer test a tu system call [Aquí](https://github.com/lsophiagr/OS-P1/tree/main/Test_System_Calls_C)
+
+
+Compila y corre el programa
+**gcc [filename]**
+**./a.out**
+
+
+![Kernel ]()
+
+
+Puedes revisar el mensaje que provee el kernel con **dmesg** esto dara el output de tu system call al final del output del Kernel.
