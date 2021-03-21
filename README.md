@@ -156,7 +156,23 @@ Compila y corre el programa
 **./a.out**
 
 
-![Kernel ]()
+![Kernel ](https://github.com/lsophiagr/OS-P1/blob/main/src_Images/out.jpg)
 
 
 Puedes revisar el mensaje que provee el kernel con **dmesg** esto dara el output de tu system call al final del output del Kernel.
+
+
+![Kernel ](https://github.com/lsophiagr/OS-P1/blob/main/src_Images/kernel_out.jpg)
+
+
+# Conclusiones
+Decidimos crear conclusiones para los lectores para que se encuentren preparados para enfrentar un problema como este. Te compartimos nuestras conclusiones así también como recomendaciones para afrontar el proyecto.
+
+- Leer es clave. Busca toda la información que puedas antes de comenzar una linea de código. Necesitas entender temas como que es un system call, como opera un system call y que lo hace diferente.
+
+- Prueba y error es el camino al éxito. No importa si en algún paso te da error, lo mejor que puedes hacer sobre los errores es aprender de ellos, te informas de mejor manera sobre como funciona el sistema operativo y entiendes mejor conceptualmente.
+
+- Verifica tus cambios. Siempre que agregues un cambio a un archivo verifica que el cambio sea aplicado y más importante aún que la syntaxis este bien. 
+
+
+Esperemos te haya servido nuestra documentación para resolver un system call.
